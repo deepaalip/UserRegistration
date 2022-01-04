@@ -31,5 +31,16 @@ public class RegexRegistration {
 	}
 	
 	
+	public static  boolean userEmail(String email) {
+		
+		 String emailreg = "^[A-Za-z0-9_-]+([.][A-Za-z0-9_-]+)@[A-Za-z]+[A-Za-z]+([.][A-Za-z]+)$";
+		 Pattern pattern = Pattern.compile(emailreg);
+		 Matcher matcher = pattern.matcher(email);
+		 
+		 System.out.println(matcher.matches());
+			return true;		
+
+	}
+	
 	
 }

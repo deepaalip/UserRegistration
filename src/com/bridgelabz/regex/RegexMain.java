@@ -16,9 +16,12 @@ public class RegexMain {
 	  System.out.println("Enter your LastName:");
 
 	  String lastName = scanner.next(); 
-	  regex.userFirstName(lastName);
+	  regex.userLastName(lastName);
 
-
+      System.out.println("Enter your email id:");
+      
+      String email = scanner.next();
+      regex.userEmail(email);
 	  
 	}
 	
