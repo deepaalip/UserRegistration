@@ -23,6 +23,12 @@ public class RegexMain {
       String email = scanner.next();
       regex.userEmail(email);
 	  
+      System.out.println("Enter your password:");
+      
+      String password = scanner.next();
+      regex.userPassword(password);
+	  
+      
 	}
 	
 }

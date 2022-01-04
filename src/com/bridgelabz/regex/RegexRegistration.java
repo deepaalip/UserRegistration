@@ -43,4 +43,15 @@ public class RegexRegistration {
 	}
 	
 	
+	
+	public static  boolean userPassword(String password) {
+	    String Passreg="^[0-9A-Za-z]{8,}";
+	    
+		Pattern pattern =Pattern.compile(Passreg);
+		Matcher matcher = pattern.matcher(password);
+		
+	System.out.println(matcher.matches());
+		return true;
+    }
+	
 }
