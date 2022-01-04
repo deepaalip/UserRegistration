@@ -13,6 +13,12 @@ public class RegexMain {
 	  String firstName = scanner.next(); 
 	  regex.userFirstName(firstName);
 	  
+	  System.out.println("Enter your LastName:");
+
+	  String lastName = scanner.next(); 
+	  regex.userFirstName(lastName);
+
+
 	  
 	}
 	

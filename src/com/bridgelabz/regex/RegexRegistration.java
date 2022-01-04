@@ -13,11 +13,22 @@ public class RegexRegistration {
 	
 	    System.out.println(matcher.matches());
 		return true;		
-
+    
 
 	
 	}
+
 	
+	public static  boolean userLastName(String lastName) {
+
+		String LastName= "^[A-Z][a-z]{3,}";
+		Pattern pattern =Pattern.compile(LastName);
+		Matcher matcher = pattern.matcher(lastName);
+	
+	System.out.println(matcher.matches());
+		return true;		
+
+	}
 	
 	
 	
