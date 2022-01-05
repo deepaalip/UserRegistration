@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 public class RegexRegistration {
 	
-	public static  boolean userFirstName(String firstName) {
+	public   boolean userFirstName(String firstName) {
 
 		String FirstName= "^[A-Z][a-z]{3,}";
 		Pattern pattern =Pattern.compile(FirstName);
@@ -19,7 +19,7 @@ public class RegexRegistration {
 	}
 
 	
-	public static  boolean userLastName(String lastName) {
+	public  boolean userLastName(String lastName) {
 
 		String LastName= "^[A-Z][a-z]{3,}";
 		Pattern pattern =Pattern.compile(LastName);
@@ -31,7 +31,7 @@ public class RegexRegistration {
 	}
 	
 	
-	public static  boolean userEmail(String email) {
+	public  boolean userEmail(String email) {
 		
 		 String emailreg = "^[A-Za-z0-9-]+(.[A-Za-z0-9-]+)*@[^_\\W]+(.[^_\\W]+)?(?=(.[^_\\W]{3,}$|.[a-zA-Z]{2}$)).*$";//UC-09 For Sample Emails
 		 Pattern pattern = Pattern.compile(emailreg);
@@ -44,7 +44,7 @@ public class RegexRegistration {
 	
 	
 	
-	public static  boolean userPassword(String password) {
+	public  boolean userPassword(String password) {
 	    String Passreg="^(?=.*[a-z])(?=."+ "*[A-Z])(?=.*[0-9])"+ "(?=.*[-+_!@#$%^&*., ?]).+$";
 	    
 		Pattern pattern =Pattern.compile(Passreg);
