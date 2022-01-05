@@ -5,18 +5,15 @@ import java.util.regex.Pattern;
 
 public class RegexRegistration {
 	
-	public static  boolean userFirstName(String firstName) {
-
-		String FirstName= "^[A-Z][a-z]{3,}";
-		Pattern pattern =Pattern.compile(FirstName);
-		Matcher matcher = pattern.matcher(firstName);
+	private static final String FirstNameRegex= "^[A-Z][a-z]{2,}";
 	
-	    System.out.println(matcher.matches());
-		return true;		
+	public  boolean userFirstName(String firstName) {
 
-
+		return Pattern.matches(FirstNameRegex, firstName);	
+    
+   }
 	
-	}
+	
 	
 	
 	
